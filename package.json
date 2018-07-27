@@ -1,0 +1,22 @@
+{
+  "name": "node-demo",
+  "version": "1.0.0",
+  "description": "node demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otfngo/node-demo.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "otfngo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otfngo/node-demo/issues"
+  },
+  "homepage": "https://github.com/otfngo/node-demo#readme"
+}
