@@ -1,0 +1,15 @@
+Sat Jul 28 2018 23:38:06 GMT+0800 (中国标准时间)
+请求方法：GET
+请求url：/favicon.ico
+请求头对象：{
+  "host": "localhost:3000",
+  "connection": "keep-alive",
+  "pragma": "no-cache",
+  "cache-control": "no-cache",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3486.0 Safari/537.36",
+  "accept": "image/webp,image/apng,image/*,*/*;q=0.8",
+  "referer": "http://localhost:3000/",
+  "accept-encoding": "gzip, deflate, br",
+  "accept-language": "zh-CN,zh;q=0.9,en;q=0.8,la;q=0.7"
+}
+请求http版本：1.1
