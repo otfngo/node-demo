@@ -1,1 +1,0 @@
-exports.myDateTime = () => new Date()

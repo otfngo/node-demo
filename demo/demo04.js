@@ -1,31 +1,32 @@
-let http = require('http')
-let qs = require("querystring")
-let nodemailer = require('nodemailer')
+const http = require('http')
+const querystring = require("querystring")
+const nodemailer = require('nodemailer')
 
 http.createServer((req, res) => {
   if (req.url === '/send-email') {
     req.addListener('data', (data) => {
       let info = decodeURIComponent(data)
-      info = qs.parse(info)
+      info = querystring.parse(info)
 
-      let index = info.emailfrom.indexOf('@')
-      let indexTo = info.emailfrom.indexOf('.')
+      const index = info.emailfrom.indexOf('@')
+      const indexTo = info.emailfrom.indexOf('.')
+
       if (index === -1 || indexTo === -1) {
         res.write('email from address error')
         res.end()
         return
       }
-      let service = info.emailfrom.slice(index + 1, indexTo)
 
-      let transporter = nodemailer.createTransport({
-        service: service,
+      const service = info.emailfrom.slice(index + 1, indexTo)
+      const transporter = nodemailer.createTransport({
+        service,
         auth: {
           user: info.emailfrom,
           pass: info.password
         }
       })
 
-      let mailOptions = {
+      const mailOptions = {
         from: info.emailfrom,
         to: info.emailto,
         subject: 'sending email using node.js',
@@ -56,7 +57,7 @@ http.createServer((req, res) => {
         <label for="emailfrom">email from password</label>
         <input type="password" name="password">
         <br>
-        <label for="emailfrom">email to address</label>
+        <label for="emailto">email to address</label>
         <input type="text" name="emailto">
         <br>
         <input type="submit">
@@ -64,5 +65,4 @@ http.createServer((req, res) => {
     `)
     res.end()
   }
-
-}).listen(9999)
+}).listen(3000)

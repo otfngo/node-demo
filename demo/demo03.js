@@ -1,12 +1,12 @@
-let http = require('http')
-let fs = require('fs')
+const http = require('http')
+const fs = require('fs')
 
 http.createServer((req, res) => {
-  fs.readFile('readFile.html', (err, data) => {
+  fs.readFile('demo03.html', (err, data) => {
     res.writeHead(200, {
       'Content-Type': 'text/html'
     })
     res.write(data)
     res.end()
   })
-}).listen(9999)
+}).listen(3000)
