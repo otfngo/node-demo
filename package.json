@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/otfngo/node-demo/issues"
   },
-  "homepage": "https://github.com/otfngo/node-demo#readme"
+  "homepage": "https://github.com/otfngo/node-demo#readme",
+  "dependencies": {
+    "mime": "^2.3.1"
+  }
 }
