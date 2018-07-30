@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/otfngo/node-demo#readme",
   "dependencies": {
-    "mime": "^2.3.1"
+    "mime": "^2.3.1",
+    "mongoose": "^5.2.5"
   }
 }
