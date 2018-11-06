@@ -21,6 +21,7 @@
   "homepage": "https://github.com/otfngo/node-demo#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
     "express": "^4.16.3",
     "mime": "^2.3.1",
     "mongoose": "^5.2.5",
