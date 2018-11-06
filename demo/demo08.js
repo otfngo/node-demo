@@ -6,7 +6,7 @@ const options = {
   method: 'GET'
 }
 
-const req = http.request(options, res => {
+http.request(options, res => {
   console.log(`STATUS: ${res.statusCode}`)
   console.log(`HEADERS: ${JSON.stringify(res.headers, null, 2)}`)
   res.setEncoding('utf8')

@@ -4,7 +4,6 @@ const Schema = mongoose.Schema
 mongoose.Promise = global.Promise
 
 const db = mongoose.connect('mongodb://localhost:27017/books')
-debugger
 db.connection.on('error', err => {
   console.log(`数据库连接失败：${err}`)
 })
