@@ -4,7 +4,9 @@
   "description": "node demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-fix": "eslint --fix .",
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -26,5 +28,12 @@
     "mime": "^2.3.1",
     "mongoose": "^5.2.5",
     "nunjucks": "^3.1.3"
+  },
+  "pre-commit": [
+    "eslint-fix",
+    "eslint"
+  ],
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
   }
 }
